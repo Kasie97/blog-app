@@ -8,8 +8,6 @@ const uuid_1 = require("uuid");
 const user_1 = require("../model/user");
 const createBlogs = async (req, res) => {
     try {
-        // const verified = req.user;
-        // console.log("verified",verified,req.user);
         const id = (0, uuid_1.v4)();
         const validateResult = validation_2.createBlogSchema.validate(req.body);
         if (validateResult.error) {

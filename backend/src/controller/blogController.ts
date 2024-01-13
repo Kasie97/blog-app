@@ -7,8 +7,6 @@ import { UserInstance } from "../model/user";
 
 export const createBlogs = async (req: Request | any, res: Response) => {
   try {
-    // const verified = req.user;
-    // console.log("verified",verified,req.user);
     const id = uuidv4();
 
     const validateResult = createBlogSchema.validate(req.body);

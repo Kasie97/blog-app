@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "compile": "tsc -w"
+    "dev": "pm2 start process.json && pm2 logs",
+    "tsc": "tsc -watch"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

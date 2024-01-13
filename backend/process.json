@@ -1,0 +1,17 @@
+{
+    "apps": [
+      {
+        "name": "backend",
+        "script": "app.js",
+        "instances": "max",
+        "exec_mode": "cluster",
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": 3000
+        },
+        "watch": true,
+        "ignore_watch": ["node_modules", "logs"]
+      }
+    ]
+  }
+  
